@@ -1,0 +1,14 @@
+Sprite2D
+CollisionShape2D
+StaticBody2D
+TextureRect
+TileMap
+Camera2D
+Node
+CharacterBody2D
+Camera3D
+MeshInstance3D
+CollisionShape3D
+CharacterBody3D
+Node3D
+DirectionalLight3D
