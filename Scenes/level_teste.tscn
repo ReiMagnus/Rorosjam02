@@ -13,10 +13,10 @@ offset_bottom = 704.0
 texture = ExtResource("1_vlq6m")
 stretch_mode = 1
 
+[node name="Parede" parent="." instance=ExtResource("3_y2onk")]
+position = Vector2(416, 416)
+
 [node name="CharacterBody2D" parent="." instance=ExtResource("1_dwv12")]
 position = Vector2(352, 352)
 
 [node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
-
-[node name="Parede" parent="." instance=ExtResource("3_y2onk")]
-position = Vector2(416, 416)

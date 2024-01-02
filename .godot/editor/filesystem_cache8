@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1703864799
+::res://::1704210424
 icon.svg::CompressedTexture2D::608616505013183149::1701532309::1701532317::1::::<><>::
 README.md::TextFile::-1::1703806423::0::1::::<><>::
 ::res://Assets/::1703866117
@@ -8,9 +8,9 @@ niko_finale.png::CompressedTexture2D::4432710680894565695::1703622181::170362218
 teste_tam_sprite60.png::CompressedTexture2D::8232843035710068732::1703696951::1703786458::1::::<><>::
 teste_tam_sprite64.png::CompressedTexture2D::2872594548008599687::1703866117::1703866117::1::::<><>::
 tile_paredes.png::CompressedTexture2D::204090960069158939::1703710725::1703710729::1::::<><>::
-::res://Scenes/::1703865404
-level_teste.tscn::PackedScene::9118215197025266857::1703865404::0::1::::<><>::uid://bt5i8jlqjmd6r::::res://Scenes/player2D.tscn<>uid://dpkbysudplulo::::res://Assets/teste_tam_sprite60.png
-parede.tscn::PackedScene::127067181874066485::1703865404::0::1::::<><>::uid://c54l3vmgetpr::::res://Assets/tile_paredes.png
-player2D.tscn::PackedScene::3782485203020972779::1703865404::0::1::::<><>::uid://cnhhyomqpcc1c::::res://Assets/maidVanessa.png<>res://Scripts/player2D.gd<>uid://b4fidkp1ndbcp::::res://Assets/niko_finale.png
-::res://Scripts/::1703865404
-player2D.gd::GDScript::-1::1703865404::0::1::::<>CharacterBody2D<>::
+::res://Scenes/::1703887392
+level_teste.tscn::PackedScene::9118215197025266857::1703884574::0::1::::<><>::uid://bt5i8jlqjmd6r::::res://Scenes/player2D.tscn<>uid://bg6rhhwwvhsst::::res://Assets/teste_tam_sprite64.png<>uid://b2s1pjnpw4yr::::res://Scenes/parede.tscn
+parede.tscn::PackedScene::127067181874066485::1703884574::0::1::::<><>::uid://c54l3vmgetpr::::res://Assets/tile_paredes.png
+player2D.tscn::PackedScene::3782485203020972779::1703887392::0::1::::<><>::uid://cnhhyomqpcc1c::::res://Assets/maidVanessa.png<>res://Scripts/player2D.gd<>uid://b4fidkp1ndbcp::::res://Assets/niko_finale.png
+::res://Scripts/::1703887392
+player2D.gd::GDScript::-1::1703887392::0::1::::<>CharacterBody2D<>::

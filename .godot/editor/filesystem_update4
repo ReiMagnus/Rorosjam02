@@ -1,4 +1,4 @@
 res://Scenes/level_teste.tscn
+res://Scripts/player2D.gd
 res://Scenes/player2D.tscn
 res://Scenes/parede.tscn
-res://Scripts/player2D.gd
