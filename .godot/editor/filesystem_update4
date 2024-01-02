@@ -2,3 +2,8 @@ res://Scenes/level_teste.tscn
 res://Scripts/player2D.gd
 res://Scenes/player2D.tscn
 res://Scenes/parede.tscn
+res://Scenes/player.tscn
+res://Scripts/player.gd
+res://Scenes/NPCs/npc_base.tscn
+res://Scenes/NPCs/teste_npc.tscn
+res://npc_base.tscn

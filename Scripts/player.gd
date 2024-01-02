@@ -6,15 +6,15 @@ var tam_tile = 64
 var direction = Vector2.ZERO # direção do andar
 var dir_olhar = Vector2.DOWN # direção do olhar do personagem
 
-var teste = Vector2.ZERO # primeira tecla de movimentação apertada
+#var teste = Vector2.ZERO # primeira tecla de movimentação apertada
 
 func _ready():
 	Input.mouse_mode = 1
-	$Area2D.disable_mode
 
 
 func _process(delta):
-	pass
+	if Input.is_action_pressed("interagir"):
+		_interagir()
 
 
 func _physics_process(delta):
@@ -56,25 +56,34 @@ func _movimento():
 	
 	# Movimentação 8 direções ------------------------------
 	direction.x = Input.get_axis("move_left", "move_right")
-	direction.y = Input.get_axis("move_up", "move_back")
-	
+	direction.y = Input.get_axis("move_up", "move_down")
 	velocity = direction.normalized() * spd
 	
 	# Personagem olhando pros lados ------------------------------
-	dir_olhar = direction
-	
-	if dir_olhar.x == -1: # Olhando pra esquerda
-			$Personagem.frame = 4
-	elif dir_olhar.x == 1: # Olhando pra direita
-			$Personagem.frame = 6
-	if dir_olhar.y == 1: # Olhando pra baixo
+	if direction != Vector2.ZERO:
+		dir_olhar = direction
+	match(dir_olhar):
+		Vector2.DOWN:
 			$Personagem.frame = 0
-	elif dir_olhar.y == -1: # Olhando pra cima
+		Vector2.UP:
 			$Personagem.frame = 2
-	
+		Vector2.LEFT:
+			$Personagem.frame = 4
+		Vector2.RIGHT:
+			$Personagem.frame = 6
 	
 	move_and_slide()
 
 
-func _on_area_2d_body_entered(body):
-	direction = Vector2.ZERO
+func _interagir():
+	match dir_olhar:
+		Vector2.DOWN:
+			$Area2D/CollisionShape2D.position.y = 45
+		Vector2.UP:
+			$Area2D/CollisionShape2D.position.y = -45
+		Vector2.RIGHT:
+			$Area2D/CollisionShape2D.position.x = 45
+		Vector2.LEFT:
+			$Area2D/CollisionShape2D.position.x = -45
+	
+	$Area2D/CollisionShape2D.position = Vector2.ZERO

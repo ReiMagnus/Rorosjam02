@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://bxj1lmcomfxcp"]
+
+[ext_resource type="PackedScene" uid="uid://ttx4enfs2emr" path="res://Scenes/NPCs/npc_base.tscn" id="1_6gulu"]
+
+[node name="teste_npc" type="Node2D"]
+
+[node name="npc_base" parent="." instance=ExtResource("1_6gulu")]
