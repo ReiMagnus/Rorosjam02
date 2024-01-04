@@ -59,7 +59,7 @@ func _movimento():
 	direction.y = Input.get_axis("move_up", "move_down")
 	velocity = direction.normalized() * spd
 	
-	 Personagem olhando pros lados ------------------------------
+	# Personagem olhando pros lados ------------------------------
 	if direction != Vector2.ZERO:
 		dir_olhar = direction
 	$Area2D.position = dir_olhar * 30 # area de interagir do player
