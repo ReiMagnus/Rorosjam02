@@ -5,30 +5,19 @@
 [ext_resource type="Texture2D" uid="uid://b4fidkp1ndbcp" path="res://Assets/niko_finale.png" id="3_br4vw"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_kwv5k"]
-size = Vector2(42, 32)
+size = Vector2(48, 32)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_vj2jr"]
-size = Vector2(32, 32)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_w1qh8"]
+size = Vector2(16, 16)
 
 [node name="Player" type="CharacterBody2D"]
+collision_mask = 6
 script = ExtResource("1_v2w6x")
 
 [node name="HitBox" type="CollisionShape2D" parent="."]
 position = Vector2(0, 16)
 shape = SubResource("RectangleShape2D_kwv5k")
 debug_color = Color(0.54902, 0.384314, 0.580392, 0.419608)
-
-[node name="Area2D" type="Area2D" parent="."]
-position = Vector2(0, 51)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-shape = SubResource("RectangleShape2D_vj2jr")
-
-[node name="ColorRect" type="ColorRect" parent="Area2D/CollisionShape2D"]
-offset_left = -16.0
-offset_top = -16.0
-offset_right = 16.0
-offset_bottom = 16.0
 
 [node name="Personagem" type="Sprite2D" parent="."]
 texture_filter = 1
@@ -45,3 +34,23 @@ position = Vector2(0, -4)
 texture = ExtResource("3_br4vw")
 hframes = 4
 vframes = 4
+
+[node name="Area2D" type="Area2D" parent="."]
+collision_layer = 8
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_w1qh8")
+
+[node name="ColorRect" type="ColorRect" parent="Area2D/CollisionShape2D"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -8.0
+offset_top = -8.0
+offset_right = 8.0
+offset_bottom = 8.0
+grow_horizontal = 2
+grow_vertical = 2

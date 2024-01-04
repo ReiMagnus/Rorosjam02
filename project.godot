@@ -11,9 +11,13 @@ config_version=5
 [application]
 
 config/name="RorosJam"
-run/main_scene="res://Scenes/level_teste.tscn"
+run/main_scene="res://Scenes/Levels/menu.tscn"
 config/features=PackedStringArray("4.2", "GL Compatibility")
 config/icon="res://icon.svg"
+
+[autoload]
+
+Global="*res://Scripts/global.gd"
 
 [display]
 
@@ -66,6 +70,13 @@ cancelar={
 "events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":88,"key_label":0,"unicode":120,"echo":false,"script":null)
 ]
 }
+
+[layer_names]
+
+2d_physics/layer_1="player"
+2d_physics/layer_2="npc"
+2d_physics/layer_3="walls"
+2d_physics/layer_4="area_interagir_player"
 
 [rendering]
 

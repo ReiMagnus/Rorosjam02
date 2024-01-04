@@ -1,0 +1,38 @@
+[gd_scene load_steps=5 format=3 uid="uid://d256w37q51dk0"]
+
+[ext_resource type="Texture2D" uid="uid://bg6rhhwwvhsst" path="res://Assets/teste_tam_sprite64.png" id="1_yjgl3"]
+[ext_resource type="PackedScene" uid="uid://b2s1pjnpw4yr" path="res://Scenes/parede.tscn" id="2_73jj3"]
+[ext_resource type="PackedScene" uid="uid://bt5i8jlqjmd6r" path="res://Scenes/player.tscn" id="3_4kbha"]
+[ext_resource type="PackedScene" uid="uid://bxj1lmcomfxcp" path="res://Scenes/NPCs/teste_npc.tscn" id="4_7n8gs"]
+
+[node name="level_teste" type="Node"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+texture_filter = 1
+offset_right = 2816.0
+offset_bottom = 960.0
+texture = ExtResource("1_yjgl3")
+stretch_mode = 1
+
+[node name="Paredes" type="Node" parent="."]
+
+[node name="Parede" parent="Paredes" instance=ExtResource("2_73jj3")]
+position = Vector2(544, 416)
+
+[node name="Parede2" parent="Paredes" instance=ExtResource("2_73jj3")]
+position = Vector2(544, 352)
+
+[node name="Parede3" parent="Paredes" instance=ExtResource("2_73jj3")]
+position = Vector2(544, 288)
+
+[node name="Parede4" parent="Paredes" instance=ExtResource("2_73jj3")]
+position = Vector2(672, 352)
+scale = Vector2(1, 5)
+
+[node name="player" parent="." instance=ExtResource("3_4kbha")]
+position = Vector2(352, 352)
+
+[node name="Camera2D" type="Camera2D" parent="player"]
+
+[node name="teste_npc" parent="." instance=ExtResource("4_7n8gs")]
+position = Vector2(160, 352)
