@@ -17,10 +17,10 @@ func _process(delta):
 
 func _interagir():
 	if Input.is_action_just_pressed("interagir") and player_area:
-		print("AAA")
 		if !dialogo:
 			dialogo = true
-			Global.parado = true
+			#Global.parado = true
+			Global.cutscene.emit(true)
 	
 
 func _on_area_interagir_area_entered(area):

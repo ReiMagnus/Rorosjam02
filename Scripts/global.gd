@@ -1,6 +1,5 @@
 extends Node
 
-var parado = false #quando true, o player ficará parado, como para cenas de dialogo ou cutscenes (sem nome melhor)
+signal cutscene(bool)
 
-func _process(delta):
-	print("AAA")
+var parado = false #quando true, o player ficará parado, como para cenas de dialogo ou cutscenes (sem nome melhor)

@@ -1,11 +1,7 @@
-res://Scenes/NPCs/npc_base.tscn
 res://Scenes/player.tscn
-res://Scenes/level_teste.tscn
-res://Scenes/parede.tscn
-res://Scenes/NPCs/teste_npc.tscn
-res://Scripts/npc_base.gd
 res://Scripts/player.gd
-res://Scenes/Levels/menu.tscn
-res://Scenes/Levels/level_teste.tscn
-res://Scenes/Levels/menu.gd
+res://Scenes/NPCs/teste_npc.tscn
+res://Scenes/NPCs/npc_base.tscn
 res://Scripts/global.gd
+res://Scenes/Levels/level_teste.tscn
+res://Scripts/npc_base.gd
