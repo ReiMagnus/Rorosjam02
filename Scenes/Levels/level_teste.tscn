@@ -1,9 +1,9 @@
 [gd_scene load_steps=5 format=3 uid="uid://d256w37q51dk0"]
 
-[ext_resource type="Texture2D" uid="uid://cl4vd8t5hmwrj" path="res://Assets/teste_tam_sprite64.png" id="1_yjgl3"]
+[ext_resource type="Texture2D" uid="uid://cl4vd8t5hmwrj" path="res://Assets/Mapas/teste_tam_sprite64.png" id="1_yjgl3"]
 [ext_resource type="PackedScene" uid="uid://b2s1pjnpw4yr" path="res://Scenes/parede.tscn" id="2_73jj3"]
 [ext_resource type="PackedScene" uid="uid://bt5i8jlqjmd6r" path="res://Scenes/player.tscn" id="3_4kbha"]
-[ext_resource type="PackedScene" uid="uid://bxj1lmcomfxcp" path="res://Scenes/NPCs/teste_npc.tscn" id="4_7n8gs"]
+[ext_resource type="PackedScene" uid="uid://bxj1lmcomfxcp" path="res://Scenes/NPCs/NPCsUnicos/teste_npc.tscn" id="4_7n8gs"]
 
 [node name="level_teste" type="Node"]
 

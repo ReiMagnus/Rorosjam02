@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cnhhyomqpcc1c"
-path="res://.godot/imported/maidVanessa.png-e86acbd08111aeb4c6a746eb4fdd5c0a.ctex"
+uid="uid://cl4vd8t5hmwrj"
+path="res://.godot/imported/teste_tam_sprite64.png-b15ff208a3991b48728778dd50158b01.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/maidVanessa.png"
-dest_files=["res://.godot/imported/maidVanessa.png-e86acbd08111aeb4c6a746eb4fdd5c0a.ctex"]
+source_file="res://Assets/Mapas/teste_tam_sprite64.png"
+dest_files=["res://.godot/imported/teste_tam_sprite64.png-b15ff208a3991b48728778dd50158b01.ctex"]
 
 [params]
 

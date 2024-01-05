@@ -1,8 +1,7 @@
-<<<<<<< HEAD
+TextureRect
+CanvasLayer
 ColorRect
-=======
 Sprite2D
->>>>>>> parent of 20f403b (commit 29/12)
 CollisionShape2D
 Area2D
 Button
@@ -13,10 +12,3 @@ Sprite2D
 Node2D
 StaticBody2D
 Node3D
-<<<<<<< HEAD
-RigidBody2D
-Node
-TextureRect
-=======
-DirectionalLight3D
->>>>>>> parent of 20f403b (commit 29/12)

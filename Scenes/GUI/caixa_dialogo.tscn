@@ -1,0 +1,34 @@
+[gd_scene load_steps=2 format=3 uid="uid://dx66r72wkfdli"]
+
+[ext_resource type="Texture2D" uid="uid://bmiujlsbvy5qw" path="res://Assets/GUI/gui_dialogo.png" id="1_8b5i8"]
+
+[node name="CaixaDialogo" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="SpriteCaixa" type="TextureRect" parent="."]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -288.0
+offset_top = -160.0
+offset_right = 288.0
+offset_bottom = -32.0
+grow_horizontal = 2
+grow_vertical = 0
+texture = ExtResource("1_8b5i8")
+
+[node name="RostoNPC" type="TextureRect" parent="SpriteCaixa"]
+layout_mode = 0
+offset_left = 464.0
+offset_top = 16.0
+offset_right = 560.0
+offset_bottom = 112.0

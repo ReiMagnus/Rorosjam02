@@ -1,4 +1,14 @@
-res://Scenes/NPCs/npc_base.tscn
 res://Scenes/player.tscn
+res://Scripts/player.gd
+res://mov_grid.gd
+res://Scripts/npc_base.gd
 res://Scenes/NPCs/teste_npc.tscn
+res://Scenes/NPCs/npc_base.tscn
 res://Scenes/Levels/level_teste.tscn
+res://Scenes/parede.tscn
+res://Scenes/GUI/caixa_dialogo.tscn
+res://Scenes/NPCs/NPCs Unicos/teste_npc.tscn
+res://Scenes/NPCs/NPCs Info/teste_npc.gd
+res://Scenes/NPCs/NPCs Info/info_teste_npc.gd
+res://Scenes/NPCs/NPCsUnicos/teste_npc.tscn
+res://Scenes/NPCs/NPCsInfo/info_teste_npc.gd

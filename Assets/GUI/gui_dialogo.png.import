@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b4fidkp1ndbcp"
-path="res://.godot/imported/niko_finale.png-43b987b7834bc7cf5eba018d1c44e887.ctex"
+uid="uid://bmiujlsbvy5qw"
+path="res://.godot/imported/gui_dialogo.png-4a771dfc715642311266e266732ffb56.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/niko_finale.png"
-dest_files=["res://.godot/imported/niko_finale.png-43b987b7834bc7cf5eba018d1c44e887.ctex"]
+source_file="res://Assets/GUI/gui_dialogo.png"
+dest_files=["res://.godot/imported/gui_dialogo.png-4a771dfc715642311266e266732ffb56.ctex"]
 
 [params]
 
