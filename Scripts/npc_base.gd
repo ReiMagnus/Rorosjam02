@@ -19,7 +19,6 @@ func _interagir():
 	if Input.is_action_just_pressed("interagir") and player_area:
 		if !dialogo:
 			dialogo = true
-			#Global.parado = true
 			Global.cutscene.emit(true)
 	
 

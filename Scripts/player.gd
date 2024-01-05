@@ -81,4 +81,3 @@ func _animation_player():
 
 func _modo_cutscene(modo:bool):
 	cutscene = modo
-	print("A")
