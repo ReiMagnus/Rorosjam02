@@ -4,7 +4,7 @@
 [ext_resource type="Script" path="res://Scenes/NPCs/NPCsInfo/info_teste_npc.gd" id="1_og1gq"]
 [ext_resource type="Texture2D" uid="uid://b4fidkp1ndbcp" path="res://Assets/Personagens/niko_finale.png" id="2_2obkl"]
 
-[node name="Node2D" type="Node2D"]
+[node name="TesteNPC" type="Node2D"]
 script = ExtResource("1_og1gq")
 
 [node name="npc_base" parent="." instance=ExtResource("1_6gulu")]

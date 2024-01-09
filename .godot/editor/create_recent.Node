@@ -1,3 +1,7 @@
+Label
+TextEdit
+Control
+Container
 TextureRect
 CanvasLayer
 ColorRect
@@ -6,9 +10,5 @@ CollisionShape2D
 Area2D
 Button
 CheckButton
-Label
-Control
 Sprite2D
 Node2D
-StaticBody2D
-Node3D
