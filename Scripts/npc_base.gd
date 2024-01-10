@@ -14,6 +14,8 @@ func _ready():
 func _process(delta):
 	_interagir()
 	_conversando()
+	if Input.is_action_just_pressed("ui_accept"):
+		get_tree().change_scene_to_file("res://Scenes/Levels/menu.tscn")
 
 
 func _conversando():
@@ -32,20 +34,28 @@ func _interagir():
 	if player_area:
 		if Input.is_action_just_pressed("interagir"):
 			if !modo_cutscene:
-				modo_cutscene = true
-				Global.cutscene.emit(true)
+				_mudar_cutscene(true)
 			else:
 				var info_npc = get_parent()
-				if num_fala < len(info_npc.falas)-1:
-					num_fala += 1
+				if !info_npc.repet is Array:
+					if num_fala < len(info_npc.falas)-1:
+						num_fala += 1
+					else:
+						num_fala = info_npc.repet
+						_mudar_cutscene(false)
 				else:
-					num_fala = 0
-					modo_cutscene = false
-					Global.cutscene.emit(false)
-		#if Input.is_action_just_pressed("cancelar"):
-			#if modo_cutscene:
-				#modo_cutscene = false
-				#Global.cutscene.emit(false)
+					if num_fala < len(info_npc.falas)-1:
+						num_fala += 1
+					elif num_fala < len(info_npc.repet)-len(info_npc.falas)-1:
+						num_fala += 1
+					else:
+						num_fala = len(info_npc.falas)
+						_mudar_cutscene(false)
+
+
+func _mudar_cutscene(bool):
+	modo_cutscene = bool
+	Global.cutscene.emit(bool)
 
 
 func _on_area_interagir_area_entered(area):

@@ -7,6 +7,7 @@ var dir_olhar = Vector2.DOWN # direção do olhar do personagem
 
 var modo_cutscene = false # quando true, o player ficará parado, como para cenas de dialogo ou cutscenes
 
+
 func _ready():
 	#Input.mouse_mode = 1
 	Global.cutscene.connect(_modo_cutscene)
@@ -42,6 +43,7 @@ func _movimento():
 	
 	move_and_slide()
 
+
 func _animation_player():
 	match(dir_olhar):
 		Vector2.DOWN:
@@ -52,6 +54,7 @@ func _animation_player():
 			$Personagem.frame = 4
 		Vector2.RIGHT:
 			$Personagem.frame = 6
+
 
 func _modo_cutscene(modo:bool):
 	modo_cutscene = modo
