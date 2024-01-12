@@ -1,11 +1,10 @@
 extends CharacterBody2D
 
 var spd = 160
-var tam_tile = 64
 var direction = Vector2.ZERO # direção do andar
 var dir_olhar = Vector2.DOWN # direção do olhar do personagem
 
-var modo_cutscene = false # quando true, o player ficará parado, como para cenas de dialogo ou cutscenes
+var _estou_na_cutscene = false # quando true, o player ficará parado, como para cenas de dialogo ou cutscenes
 
 
 func _ready():
@@ -14,11 +13,12 @@ func _ready():
 
 
 func _process(delta):
-	_animation_player()
+	if !_estou_na_cutscene:
+		_animation_player()
 
 
 func _physics_process(delta):
-	if !modo_cutscene:
+	if !_estou_na_cutscene:
 		_movimento()
 
 
@@ -57,4 +57,4 @@ func _animation_player():
 
 
 func _modo_cutscene(modo:bool):
-	modo_cutscene = modo
+	_estou_na_cutscene = modo

@@ -2,9 +2,16 @@ extends Node2D
 
 var lado_caixa_dialogo = true # false = esquerda, true =direita
 var nome = "Niko"
-var rosto = load("res://Assets/GUI/RostosNPCs/niko.png")
+
+var rosto = [ # Lista de todos os rostos do npc
+	load("res://Assets/GUI/RostosNPCs/af.png"),
+	load("res://Assets/GUI/RostosNPCs/niko.png"),
+	load("res://Assets/GUI/RostosNPCs/niko_pancakes.png"),
+	load("res://Assets/GUI/RostosNPCs/niko_wtf.png"),
+]
 
 var falas = []
+var rosto_atual = 0
 var repet # pode ser um valor int ou um array
 
 func _ready():
@@ -16,11 +23,13 @@ func _ready():
 				"Fala 3",
 			]
 			repet = 0 # Repete todas as falas acima
+			rosto_atual = [1, 2, 3]
 		1: 
 			falas = [
 				"Fala 56",
 				"Fala 81",
 				"Fala 24",
+				"Fala 64",
 			]
 			repet = len(falas)-1 # Repete apenas a última fala
 		2: 
@@ -29,7 +38,7 @@ func _ready():
 				"Banana",
 				"Uva",
 			]
-			repet = ["Gosto de banana"]
+			repet = ["Gosto de banana"] # Fala especial
 		3: 
 			falas = [
 				"Arius",
@@ -38,12 +47,4 @@ func _ready():
 				"Ayla", 
 				"e Kiki"
 			]
-			repet = ["Os Cães das Colinas", "eles são demais!!"]
-
-
-#func _process(delta):
-	#if Input.is_action_just_pressed("cancelar"):
-		#if lado_caixa_dialogo:
-			#lado_caixa_dialogo = false
-		#elif !lado_caixa_dialogo:
-			#lado_caixa_dialogo = true
+			repet = ["Os Cães das Colinas", "eles são demais!!"] # Falas especiais

@@ -3,13 +3,14 @@ extends Control
 var lado = false # false = esquerda, true =direita
 
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _ready():
+	hide()
+
 func _process(delta):
 	_config_caixa_dialogo()
 
 
 func _config_caixa_dialogo():
-	pass
 	if !lado:  # Esquerda
 		$SpriteCaixa.texture = load("res://Assets/GUI/caixa_dialogoE.png")
 		$SpriteCaixa/RostoNPC.position = Vector2(16, 16)
