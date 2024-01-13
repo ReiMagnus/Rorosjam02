@@ -1,6 +1,6 @@
 extends Node2D
 
-var lado_caixa_dialogo = true # false = esquerda, true =direita
+var lado_caixa_dialogo = 0 # false = esquerda, true =direita
 var nome = "Niko"
 
 var rosto = [ # Lista de todos os rostos do npc

@@ -25,7 +25,7 @@ func _conversando():
 		
 		# ----- Escolhendo as variações de rosto do npc dependendo da fala
 		if info_npc.rosto_atual is Array:
-			$CanvasLayer/CaixaDialogo/SpriteCaixa/RostoNPC.texture = info_npc.rosto[info_npc.rosto_atual[num_fala]]
+			$CanvasLazyer/CaixaDialogo/SpriteCaixa/RostoNPC.texture = info_npc.rosto[info_npc.rosto_atual[num_fala]]
 		else: # Mostrando uma variação de rosto independente da fala
 			$CanvasLayer/CaixaDialogo/SpriteCaixa/RostoNPC.texture = info_npc.rosto[info_npc.rosto_atual]
 		
@@ -43,7 +43,6 @@ func _interagir():
 		if !modo_cutscene:
 			_mudar_cutscene(true)
 		else:
-			#var info_npc = get_parent()
 			if info_npc.repet is int: # -- Falas de repetição 
 				if num_fala < len(info_npc.falas)-1:
 					num_fala += 1
