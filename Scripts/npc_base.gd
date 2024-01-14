@@ -11,6 +11,7 @@ var modo_repet = 0 # 0 = Grande, 1 = Pequeno
 func _ready():
 	info_npc = get_parent()
 
+
 func _process(delta):
 	if player_area:
 		_interagir()
@@ -22,12 +23,7 @@ func _conversando():
 		$CanvasLayer/CaixaDialogo.show()
 		$CanvasLayer/CaixaDialogo.lado = info_npc.lado_caixa_dialogo
 		$CanvasLayer/CaixaDialogo/SpriteCaixa/Nome.text = info_npc.nome
-		
-		# ----- Escolhendo as variações de rosto do npc dependendo da fala
-		if info_npc.rosto_atual is Array:
-			$CanvasLazyer/CaixaDialogo/SpriteCaixa/RostoNPC.texture = info_npc.rosto[info_npc.rosto_atual[num_fala]]
-		else: # Mostrando uma variação de rosto independente da fala
-			$CanvasLayer/CaixaDialogo/SpriteCaixa/RostoNPC.texture = info_npc.rosto[info_npc.rosto_atual]
+		$CanvasLayer/CaixaDialogo/SpriteCaixa/RostoNPC.texture = info_npc.rosto
 		
 		if num_fala < len(info_npc.falas):
 			$CanvasLayer/CaixaDialogo/SpriteCaixa/Falas.text = info_npc.falas[num_fala]

@@ -1,17 +1,11 @@
 extends Node2D
 
-var lado_caixa_dialogo = 0 # false = esquerda, true =direita
+var lado_caixa_dialogo = 1 # false = esquerda, true =direita
 var nome = "Niko"
 
-var rosto = [ # Lista de todos os rostos do npc
-	load("res://Assets/GUI/RostosNPCs/af.png"),
-	load("res://Assets/GUI/RostosNPCs/niko.png"),
-	load("res://Assets/GUI/RostosNPCs/niko_pancakes.png"),
-	load("res://Assets/GUI/RostosNPCs/niko_wtf.png"),
-]
+var rosto = load("res://Assets/RostosNPCs/teste_rosto.png")
 
 var falas = []
-var rosto_atual = 0
 var repet # pode ser um valor int ou um array
 
 func _ready():
@@ -23,7 +17,6 @@ func _ready():
 				"Fala 3",
 			]
 			repet = 0 # Repete todas as falas acima
-			rosto_atual = [1, 2, 3]
 		1: 
 			falas = [
 				"Fala 56",

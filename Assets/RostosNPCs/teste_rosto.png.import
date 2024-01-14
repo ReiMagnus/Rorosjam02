@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://1bktvi6h0xhn"
-path="res://.godot/imported/niko_wtf.png-223b473ed1aa3dc82748aad81367cde5.ctex"
+uid="uid://dak86t6ul7eg1"
+path="res://.godot/imported/teste_rosto.png-a61cadf32a7a625704bd53b120af035d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/GUI/RostosNPCs/niko_wtf.png"
-dest_files=["res://.godot/imported/niko_wtf.png-223b473ed1aa3dc82748aad81367cde5.ctex"]
+source_file="res://Assets/RostosNPCs/teste_rosto.png"
+dest_files=["res://.godot/imported/teste_rosto.png-a61cadf32a7a625704bd53b120af035d.ctex"]
 
 [params]
 
