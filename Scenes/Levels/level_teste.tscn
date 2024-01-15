@@ -29,10 +29,10 @@ position = Vector2(544, 288)
 position = Vector2(672, 352)
 scale = Vector2(1, 5)
 
+[node name="teste_npc" parent="." instance=ExtResource("4_7n8gs")]
+position = Vector2(224, 224)
+
 [node name="player" parent="." instance=ExtResource("3_4kbha")]
 position = Vector2(160, 224)
 
 [node name="Camera2D" type="Camera2D" parent="player"]
-
-[node name="teste_npc" parent="." instance=ExtResource("4_7n8gs")]
-position = Vector2(224, 224)

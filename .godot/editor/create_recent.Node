@@ -1,3 +1,4 @@
+Timer
 TileMap
 Label
 TextEdit
@@ -12,4 +13,3 @@ Area2D
 Button
 CheckButton
 Sprite2D
-Node2D

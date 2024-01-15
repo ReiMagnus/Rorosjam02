@@ -1,8 +1,12 @@
-res://Scenes/Levels/menu.tscn
+res://Scenes/GUI/caixa_dialogo.tscn
 res://Scripts/caixa_dialogo.gd
-res://Scripts/npc_base.gd
-res://Scripts/NPCsInfo/info_teste_npc.gd
+res://Scenes/Levels/menu.tscn
 res://Scenes/NPCs/NPCsUnicos/teste_npc.tscn
 res://Scenes/NPCs/npc_base.tscn
-res://Scenes/GUI/caixa_dialogo.tscn
 res://Scenes/player.tscn
+res://Scripts/npc_base.gd
+res://Scripts/global.gd
+res://Scripts/NPCsInfo/info_teste_npc.gd
+res://Scripts/menu.gd
+res://Scripts/player.gd
+res://Scenes/Levels/level_teste.tscn

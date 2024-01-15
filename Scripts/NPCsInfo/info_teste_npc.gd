@@ -19,12 +19,12 @@ func _ready():
 			repet = 0 # Repete todas as falas acima
 		1: 
 			falas = [
-				"Fala 56",
-				"Fala 81",
-				"Fala 24",
-				"Fala 64",
+				"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+				"bbbbbbbbbbbbbbbbbbbb",
+				"cccccccccccccccccccc",
+				"dddddddddddddddddddd",
 			]
-			repet = len(falas)-1 # Repete apenas a última fala
+			repet = 0 # Repete apenas a última fala
 		2: 
 			falas = [
 				"Maça",

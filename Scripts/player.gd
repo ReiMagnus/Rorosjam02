@@ -14,6 +14,7 @@ func _ready():
 
 func _process(delta):
 	if !_estou_na_cutscene:
+		Global.y_player = position.y
 		_animation_player()
 
 
@@ -30,22 +31,23 @@ func _movimento():
 
 	#Personagem olhando pros lados ------------------------------
 	if direction != Vector2.ZERO:
-		match(direction):
-			Vector2.DOWN:
-				dir_olhar = Vector2.DOWN
-			Vector2.UP:
-				dir_olhar = Vector2.UP
-			Vector2.LEFT:
-				dir_olhar = Vector2.LEFT
-			Vector2.RIGHT:
-				dir_olhar = Vector2.RIGHT
+		dir_olhar = direction
+		#match(direction):
+			#Vector2.DOWN:
+				#dir_olhar = Vector2.DOWN
+			#Vector2.UP:
+				#dir_olhar = Vector2.UP
+			#Vector2.LEFT:
+				#dir_olhar = Vector2.LEFT
+			#Vector2.RIGHT:
+				#dir_olhar = Vector2.RIGHT
 	$Area2D.position = dir_olhar * 32 # area de interagir do player
 	
 	move_and_slide()
 
 
 func _animation_player():
-	match(dir_olhar):
+	match(direction):
 		Vector2.DOWN:
 			$Personagem.frame = 0
 		Vector2.UP:
