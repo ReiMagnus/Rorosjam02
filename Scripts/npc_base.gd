@@ -53,7 +53,6 @@ func _mudar_cutscene(bool):
 	modo_cutscene = bool
 	Global.cutscene.emit(bool)
 
-
 func _on_area_interagir_area_entered(area):
 	player_area = true
 

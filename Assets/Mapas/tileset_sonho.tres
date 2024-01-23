@@ -1,0 +1,23 @@
+[gd_resource type="TileSet" load_steps=3 format=3 uid="uid://dru2ai506ch55"]
+
+[ext_resource type="Texture2D" uid="uid://dbga6j52rrxyf" path="res://Assets/Mapas/tileset_sonho.png" id="1_6mq0c"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_8gs03"]
+texture = ExtResource("1_6mq0c")
+texture_region_size = Vector2i(64, 64)
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+5:0/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+4:1/0 = 0
+5:1/0 = 0
+1:1/0 = 0
+0:1/0 = 0
+
+[resource]
+tile_size = Vector2i(64, 64)
+sources/1 = SubResource("TileSetAtlasSource_8gs03")
