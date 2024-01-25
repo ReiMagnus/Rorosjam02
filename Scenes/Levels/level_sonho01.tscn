@@ -1,8 +1,8 @@
 [gd_scene load_steps=4 format=3 uid="uid://qpwqjglaipb"]
 
 [ext_resource type="TileSet" uid="uid://dru2ai506ch55" path="res://Assets/Mapas/tileset_sonho.tres" id="1_eu8q0"]
-[ext_resource type="PackedScene" uid="uid://b2s1pjnpw4yr" path="res://Scenes/parede.tscn" id="1_jvydb"]
-[ext_resource type="PackedScene" uid="uid://bt5i8jlqjmd6r" path="res://Scenes/player.tscn" id="2_ggbk2"]
+[ext_resource type="PackedScene" uid="uid://b2s1pjnpw4yr" path="res://Scenes/Levels/parede.tscn" id="1_jvydb"]
+[ext_resource type="PackedScene" uid="uid://bt5i8jlqjmd6r" path="res://Scenes/PropsBASE/player.tscn" id="2_ggbk2"]
 
 [node name="LevelSonho01" type="Node"]
 

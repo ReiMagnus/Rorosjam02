@@ -14,15 +14,15 @@ collision_layer = 2
 collision_mask = 0
 script = ExtResource("1_o5k2l")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+[node name="Colisão" type="CollisionShape2D" parent="."]
 position = Vector2(0, 16)
 shape = SubResource("RectangleShape2D_ub5bx")
 
-[node name="area_interagir" type="Area2D" parent="."]
+[node name="AreaInteragir" type="Area2D" parent="."]
 collision_layer = 0
 collision_mask = 8
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="area_interagir"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AreaInteragir"]
 shape = SubResource("RectangleShape2D_kw6ty")
 debug_color = Color(0, 0.529412, 0.996078, 0.419608)
 
@@ -30,5 +30,5 @@ debug_color = Color(0, 0.529412, 0.996078, 0.419608)
 
 [node name="CaixaDialogo" parent="CanvasLayer" instance=ExtResource("2_g2mey")]
 
-[connection signal="area_entered" from="area_interagir" to="." method="_on_area_interagir_area_entered"]
-[connection signal="area_exited" from="area_interagir" to="." method="_on_area_interagir_area_exited"]
+[connection signal="area_entered" from="AreaInteragir" to="." method="_on_area_interagir_area_entered"]
+[connection signal="area_exited" from="AreaInteragir" to="." method="_on_area_interagir_area_exited"]

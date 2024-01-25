@@ -13,6 +13,7 @@ func _ready():
 
 
 func _process(delta):
+	#print(Global.inventario)
 	if !_estou_na_cutscene:
 		Global.y_player = position.y
 		_animation_player()

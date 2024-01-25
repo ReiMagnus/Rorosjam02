@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://d256w37q51dk0"]
+[gd_scene load_steps=6 format=3 uid="uid://d256w37q51dk0"]
 
 [ext_resource type="Texture2D" uid="uid://cl4vd8t5hmwrj" path="res://Assets/Mapas/teste_tam_sprite64.png" id="1_yjgl3"]
-[ext_resource type="PackedScene" uid="uid://b2s1pjnpw4yr" path="res://Scenes/parede.tscn" id="2_73jj3"]
-[ext_resource type="PackedScene" uid="uid://bt5i8jlqjmd6r" path="res://Scenes/player.tscn" id="3_4kbha"]
-[ext_resource type="PackedScene" uid="uid://bxj1lmcomfxcp" path="res://Scenes/NPCs/NPCsUnicos/teste_npc.tscn" id="4_7n8gs"]
+[ext_resource type="PackedScene" uid="uid://b2s1pjnpw4yr" path="res://Scenes/Levels/parede.tscn" id="2_73jj3"]
+[ext_resource type="PackedScene" uid="uid://bt5i8jlqjmd6r" path="res://Scenes/PropsBASE/player.tscn" id="3_4kbha"]
+[ext_resource type="PackedScene" uid="uid://bxj1lmcomfxcp" path="res://Scenes/NPCs/NPCBASE/teste_npc.tscn" id="4_7n8gs"]
+[ext_resource type="PackedScene" uid="uid://b74unos3sdrlf" path="res://Scenes/PropsBASE/teste_prop.tscn" id="4_pkfrx"]
 
 [node name="level_teste" type="Node"]
 
@@ -29,10 +30,22 @@ position = Vector2(544, 288)
 position = Vector2(672, 352)
 scale = Vector2(1, 5)
 
-[node name="teste_npc" parent="." instance=ExtResource("4_7n8gs")]
+[node name="TesteNPC" parent="." instance=ExtResource("4_7n8gs")]
 position = Vector2(224, 224)
+
+[node name="TesteProp" parent="." instance=ExtResource("4_pkfrx")]
+position = Vector2(352, 224)
 
 [node name="player" parent="." instance=ExtResource("3_4kbha")]
 position = Vector2(160, 224)
 
 [node name="Camera2D" type="Camera2D" parent="player"]
+
+[node name="TesteProp2" parent="." instance=ExtResource("4_pkfrx")]
+position = Vector2(416, 288)
+
+[node name="TesteProp3" parent="." instance=ExtResource("4_pkfrx")]
+position = Vector2(288, 96)
+
+[node name="TesteProp4" parent="." instance=ExtResource("4_pkfrx")]
+position = Vector2(96, 352)

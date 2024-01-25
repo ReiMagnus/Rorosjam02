@@ -52,6 +52,13 @@ func _interagir():
 func _mudar_cutscene(bool):
 	modo_cutscene = bool
 	Global.cutscene.emit(bool)
+	if bool == false:
+		for i in info_npc.pontos_chaves.size():
+			if Global.num_historia == info_npc.pontos_chaves[i]:
+				Global.historia()
+				num_fala = 0
+				break
+
 
 func _on_area_interagir_area_entered(area):
 	player_area = true
