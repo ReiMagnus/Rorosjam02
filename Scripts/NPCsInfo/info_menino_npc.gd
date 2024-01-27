@@ -11,18 +11,23 @@ var repet # pode ser um valor int ou um array
 
 func _ready():
 	Global.avancar_historia.connect(_escolhendo_falas)
-	
-	nome = "Niko"
+	nome = "Menino"
 	rosto = load("res://Assets/RostosNPCs/teste_rosto.png")
-	pontos_chaves = []
+	pontos_chaves = [0, 2]
 	_escolhendo_falas()
 
 
 func _escolhendo_falas():
 	match Global.num_historia:
 		0:
-			falas = ["Arius", "Ignis", "Rexthor", "Ayla",  "e Kiki"]
-			repet = ["Os Cães das Colinas", "eles são demais!!"] # Falas especiais
+			falas = ["Olá...", "Nunca vi você antes...", "Quer ser meu amigo?"]
+			repet = 0 # Falas especiais
+		1:
+			falas = ["Item 01", "Item 02", "Item 03", "Item 04",]
+			repet = 0 # Falas especiais
+		2:
+			falas = ["Obrigado..."]
+			repet = 0 # Falas especiais
 		_:
 			falas = ["SEM FALAS"]
 			repet = 0

@@ -17,3 +17,5 @@ func _escolhendo_falas():
 			falas = ["item genérico"]
 		_:
 			falas = ["SEM FALAS"]
+	if coletavel:
+		falas.insert(falas.size(), "*Você pegou esse item")

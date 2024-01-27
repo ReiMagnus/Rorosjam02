@@ -14,6 +14,11 @@ func historia():
 	avancar_historia.emit()
 
 
-#func _process(delta):
-	#if Input.is_action_just_pressed("cancelar"):
-		#historia()
+func _process(delta):
+	print(num_historia)
+	match num_historia:
+		1:
+			if inventario == 4:
+				historia()
+		3:
+			get_tree().change_scene_to_file("res://Scenes/Levels/level_quarto_menino.tscn")

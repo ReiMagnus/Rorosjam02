@@ -1,0 +1,22 @@
+[gd_scene load_steps=3 format=3 uid="uid://djcrc88x0y781"]
+
+[ext_resource type="Script" path="res://Scripts/NPCsInfo/info_menino_npc.gd" id="1_74gie"]
+[ext_resource type="PackedScene" uid="uid://ttx4enfs2emr" path="res://Scenes/NPCs/NPCBase/npc_base.tscn" id="2_f46et"]
+
+[node name="MeninoNPC" type="Node2D"]
+script = ExtResource("1_74gie")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_left = -32.0
+offset_top = -32.0
+offset_right = 32.0
+offset_bottom = 32.0
+color = Color(1, 0.596078, 1, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="npc_base" parent="." instance=ExtResource("2_f46et")]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+hframes = 4
+vframes = 4

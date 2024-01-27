@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://bxj1lmcomfxcp"]
 
-[ext_resource type="PackedScene" uid="uid://ttx4enfs2emr" path="res://Scenes/NPCs/NPCBASE/npc_base.tscn" id="1_6gulu"]
+[ext_resource type="PackedScene" uid="uid://ttx4enfs2emr" path="res://Scenes/NPCs/NPCBase/npc_base.tscn" id="1_6gulu"]
 [ext_resource type="Script" path="res://Scripts/NPCsInfo/info_teste_npc.gd" id="1_og1gq"]
 [ext_resource type="Texture2D" uid="uid://b4fidkp1ndbcp" path="res://Assets/Personagens/niko_finale.png" id="2_2obkl"]
 

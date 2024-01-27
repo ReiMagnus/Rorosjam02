@@ -6,14 +6,14 @@ var dir_olhar = Vector2.DOWN # direção do olhar do personagem
 
 var _estou_na_cutscene = false # quando true, o player ficará parado, como para cenas de dialogo ou cutscenes
 
+var tecla1 = Vector2.ZERO # salvar a primeira tecla de movimento que apertou
+var tecla2 = Vector2.ZERO # salvar a segunda            //
 
 func _ready():
-	#Input.mouse_mode = 1
 	Global.cutscene.connect(_modo_cutscene)
 
 
 func _process(delta):
-	#print(Global.inventario)
 	if !_estou_na_cutscene:
 		Global.y_player = position.y
 		_animation_player()
@@ -26,29 +26,26 @@ func _physics_process(delta):
 
 func _movimento():
 	#Movimentação 8 direções ------------------------------
+	direction = Vector2.ZERO
 	direction.x = Input.get_axis("move_left", "move_right")
 	direction.y = Input.get_axis("move_up", "move_down")
 	velocity = direction.normalized() * spd
-
-	#Personagem olhando pros lados ------------------------------
+	
+	#Personagem olhando pros lados (4 direções) -----------
 	if direction != Vector2.ZERO:
-		dir_olhar = direction
-		#match(direction):
-			#Vector2.DOWN:
-				#dir_olhar = Vector2.DOWN
-			#Vector2.UP:
-				#dir_olhar = Vector2.UP
-			#Vector2.LEFT:
-				#dir_olhar = Vector2.LEFT
-			#Vector2.RIGHT:
-				#dir_olhar = Vector2.RIGHT
+		if direction.x == 0 or direction.y == 0:
+			tecla1 = direction
+			dir_olhar = tecla1
+		else:
+			tecla2 = direction-tecla1
+			dir_olhar = tecla2
 	$Area2D.position = dir_olhar * 32 # area de interagir do player
 	
 	move_and_slide()
 
 
 func _animation_player():
-	match(direction):
+	match dir_olhar:
 		Vector2.DOWN:
 			$Personagem.frame = 0
 		Vector2.UP:
