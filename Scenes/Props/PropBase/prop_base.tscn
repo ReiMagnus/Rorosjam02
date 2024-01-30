@@ -4,7 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://dx66r72wkfdli" path="res://Scenes/GUI/caixa_dialogo.tscn" id="2_jn2l4"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_v4o0w"]
-size = Vector2(48, 48)
+size = Vector2(32, 32)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_pmm85"]
 size = Vector2(32, 32)
@@ -16,7 +16,7 @@ collision_mask = 0
 script = ExtResource("1_jm3j3")
 
 [node name="Colisão" type="CollisionShape2D" parent="."]
-position = Vector2(16, 16)
+position = Vector2(48, 48)
 shape = SubResource("RectangleShape2D_v4o0w")
 
 [node name="AreaInteragir" type="Area2D" parent="."]
@@ -24,7 +24,7 @@ collision_layer = 0
 collision_mask = 8
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="AreaInteragir"]
-position = Vector2(16, 16)
+position = Vector2(48, 48)
 shape = SubResource("RectangleShape2D_pmm85")
 debug_color = Color(0, 0.529412, 0.996078, 0.419608)
 

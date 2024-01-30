@@ -1,57 +1,462 @@
 [gd_scene load_steps=6 format=3 uid="uid://qpwqjglaipb"]
 
 [ext_resource type="TileSet" uid="uid://dru2ai506ch55" path="res://Assets/Mapas/tileset_sonho.tres" id="1_eu8q0"]
-[ext_resource type="PackedScene" uid="uid://b2s1pjnpw4yr" path="res://Scenes/parede.tscn" id="1_vg76m"]
+[ext_resource type="Texture2D" uid="uid://ba6kjlj506qnb" path="res://Assets/Mapas/RascunhoMapaSonho.png" id="1_xv3s7"]
 [ext_resource type="PackedScene" uid="uid://bt5i8jlqjmd6r" path="res://Scenes/player.tscn" id="2_ggbk2"]
+[ext_resource type="PackedScene" uid="uid://b2s1pjnpw4yr" path="res://Scenes/parede.tscn" id="2_j6uqv"]
 [ext_resource type="PackedScene" uid="uid://djcrc88x0y781" path="res://Scenes/NPCs/menino_npc.tscn" id="4_jeu6k"]
-[ext_resource type="PackedScene" uid="uid://b74unos3sdrlf" path="res://Scenes/Props/PropBase/teste_prop.tscn" id="5_vjccf"]
 
 [node name="LevelSonho01" type="Node"]
 
 [node name="Paredes" type="Node" parent="."]
 
-[node name="Parede" parent="Paredes" instance=ExtResource("1_vg76m")]
-position = Vector2(-320, 192)
-scale = Vector2(10, 1)
+[node name="Parede" parent="Paredes" instance=ExtResource("2_j6uqv")]
+position = Vector2(-1600, 1536)
+scale = Vector2(3, 1)
 
-[node name="Parede2" parent="Paredes" instance=ExtResource("1_vg76m")]
-position = Vector2(-320, -256)
-scale = Vector2(1, 7)
+[node name="Parede2" parent="Paredes" instance=ExtResource("2_j6uqv")]
+position = Vector2(-1408, 1600)
+scale = Vector2(3, 1)
 
-[node name="Parede3" parent="Paredes" instance=ExtResource("1_vg76m")]
-position = Vector2(256, -256)
-scale = Vector2(1, 7)
+[node name="Parede3" parent="Paredes" instance=ExtResource("2_j6uqv")]
+position = Vector2(-1216, 1536)
+scale = Vector2(2, 1)
 
-[node name="Parede4" parent="Paredes" instance=ExtResource("1_vg76m")]
-position = Vector2(-256, -256)
-scale = Vector2(3, 2)
+[node name="Parede4" parent="Paredes" instance=ExtResource("2_j6uqv")]
+position = Vector2(-1088, 1472)
 
-[node name="Parede5" parent="Paredes" instance=ExtResource("1_vg76m")]
-position = Vector2(64, -256)
-scale = Vector2(3, 2)
+[node name="Parede5" parent="Paredes" instance=ExtResource("2_j6uqv")]
+position = Vector2(-1024, 1408)
+
+[node name="Parede6" parent="Paredes" instance=ExtResource("2_j6uqv")]
+position = Vector2(-960, 1152)
+scale = Vector2(1, 4)
+
+[node name="Parede7" parent="Paredes" instance=ExtResource("2_j6uqv")]
+position = Vector2(-896, 1088)
+scale = Vector2(4, 1)
+
+[node name="Parede8" parent="Paredes" instance=ExtResource("2_j6uqv")]
+position = Vector2(-640, 1024)
+
+[node name="Parede9" parent="Paredes" instance=ExtResource("2_j6uqv")]
+position = Vector2(-576, 960)
+
+[node name="Parede10" parent="Paredes" instance=ExtResource("2_j6uqv")]
+position = Vector2(-512, 1024)
+
+[node name="Parede11" parent="Paredes" instance=ExtResource("2_j6uqv")]
+position = Vector2(-448, 1088)
+scale = Vector2(2, 1)
+
+[node name="Parede12" parent="Paredes" instance=ExtResource("2_j6uqv")]
+position = Vector2(-320, 1152)
+
+[node name="Parede13" parent="Paredes" instance=ExtResource("2_j6uqv")]
+position = Vector2(-256, 1088)
+scale = Vector2(2, 1)
+
+[node name="Parede14" parent="Paredes" instance=ExtResource("2_j6uqv")]
+position = Vector2(-128, 1024)
+scale = Vector2(4, 1)
+
+[node name="Parede15" parent="Paredes" instance=ExtResource("2_j6uqv")]
+position = Vector2(128, 1088)
+scale = Vector2(2, 1)
+
+[node name="Parede16" parent="Paredes" instance=ExtResource("2_j6uqv")]
+position = Vector2(256, 1152)
+
+[node name="Parede17" parent="Paredes" instance=ExtResource("2_j6uqv")]
+position = Vector2(320, 1216)
+scale = Vector2(2, 1)
+
+[node name="Parede18" parent="Paredes" instance=ExtResource("2_j6uqv")]
+position = Vector2(448, 1280)
+scale = Vector2(3, 1)
+
+[node name="Parede19" parent="Paredes" instance=ExtResource("2_j6uqv")]
+position = Vector2(640, 1344)
+
+[node name="Parede20" parent="Paredes" instance=ExtResource("2_j6uqv")]
+position = Vector2(704, 1408)
+scale = Vector2(6, 1)
+
+[node name="Parede21" parent="Paredes" instance=ExtResource("2_j6uqv")]
+position = Vector2(1088, 1344)
+scale = Vector2(3, 1)
+
+[node name="Parede22" parent="Paredes" instance=ExtResource("2_j6uqv")]
+position = Vector2(1280, 1280)
+
+[node name="Parede23" parent="Paredes" instance=ExtResource("2_j6uqv")]
+position = Vector2(1344, 1216)
+
+[node name="Parede24" parent="Paredes" instance=ExtResource("2_j6uqv")]
+position = Vector2(1408, 1152)
+
+[node name="Parede25" parent="Paredes" instance=ExtResource("2_j6uqv")]
+position = Vector2(1472, 1088)
+
+[node name="Parede26" parent="Paredes" instance=ExtResource("2_j6uqv")]
+position = Vector2(1536, 768)
+scale = Vector2(1, 5)
+
+[node name="Parede27" parent="Paredes" instance=ExtResource("2_j6uqv")]
+position = Vector2(1472, 704)
+
+[node name="Parede28" parent="Paredes" instance=ExtResource("2_j6uqv")]
+position = Vector2(1408, 640)
+
+[node name="Parede29" parent="Paredes" instance=ExtResource("2_j6uqv")]
+position = Vector2(1216, 576)
+scale = Vector2(3, 1)
+
+[node name="Parede30" parent="Paredes" instance=ExtResource("2_j6uqv")]
+position = Vector2(1152, 512)
+
+[node name="Parede31" parent="Paredes" instance=ExtResource("2_j6uqv")]
+position = Vector2(1088, 384)
+scale = Vector2(1, 2)
+
+[node name="Parede32" parent="Paredes" instance=ExtResource("2_j6uqv")]
+position = Vector2(1024, 128)
+scale = Vector2(1, 4)
+
+[node name="Parede33" parent="Paredes" instance=ExtResource("2_j6uqv")]
+position = Vector2(960, -256)
+scale = Vector2(1, 6)
+
+[node name="Parede34" parent="Paredes" instance=ExtResource("2_j6uqv")]
+position = Vector2(1024, -384)
+scale = Vector2(1, 2)
+
+[node name="Parede35" parent="Paredes" instance=ExtResource("2_j6uqv")]
+position = Vector2(1088, -512)
+scale = Vector2(1, 2)
+
+[node name="Parede36" parent="Paredes" instance=ExtResource("2_j6uqv")]
+position = Vector2(1152, -640)
+scale = Vector2(1, 2)
+
+[node name="Parede37" parent="Paredes" instance=ExtResource("2_j6uqv")]
+position = Vector2(1216, -896)
+scale = Vector2(1, 4)
+
+[node name="Parede38" parent="Paredes" instance=ExtResource("2_j6uqv")]
+position = Vector2(1152, -1088)
+scale = Vector2(1, 3)
+
+[node name="Parede39" parent="Paredes" instance=ExtResource("2_j6uqv")]
+position = Vector2(1216, -1344)
+scale = Vector2(1, 4)
+
+[node name="Parede40" parent="Paredes" instance=ExtResource("2_j6uqv")]
+position = Vector2(1152, -1408)
+
+[node name="Parede41" parent="Paredes" instance=ExtResource("2_j6uqv")]
+position = Vector2(960, -1472)
+scale = Vector2(3, 1)
+
+[node name="Parede42" parent="Paredes" instance=ExtResource("2_j6uqv")]
+position = Vector2(448, -1536)
+scale = Vector2(8, 1)
+
+[node name="Parede43" parent="Paredes" instance=ExtResource("2_j6uqv")]
+position = Vector2(320, -1472)
+scale = Vector2(2, 1)
+
+[node name="Parede44" parent="Paredes" instance=ExtResource("2_j6uqv")]
+position = Vector2(256, -1408)
+
+[node name="Parede45" parent="Paredes" instance=ExtResource("2_j6uqv")]
+position = Vector2(192, -1344)
+
+[node name="Parede46" parent="Paredes" instance=ExtResource("2_j6uqv")]
+position = Vector2(128, -1280)
+
+[node name="Parede47" parent="Paredes" instance=ExtResource("2_j6uqv")]
+position = Vector2(64, -1216)
+scale = Vector2(1, 8)
+
+[node name="Parede48" parent="Paredes" instance=ExtResource("2_j6uqv")]
+position = Vector2(0, -704)
+
+[node name="Parede49" parent="Paredes" instance=ExtResource("2_j6uqv")]
+position = Vector2(-64, -768)
+
+[node name="Parede50" parent="Paredes" instance=ExtResource("2_j6uqv")]
+position = Vector2(-128, -832)
+
+[node name="Parede51" parent="Paredes" instance=ExtResource("2_j6uqv")]
+position = Vector2(-192, -896)
+
+[node name="Parede52" parent="Paredes" instance=ExtResource("2_j6uqv")]
+position = Vector2(-256, -960)
+
+[node name="Parede53" parent="Paredes" instance=ExtResource("2_j6uqv")]
+position = Vector2(-320, -1024)
+
+[node name="Parede54" parent="Paredes" instance=ExtResource("2_j6uqv")]
+position = Vector2(-448, -1088)
+scale = Vector2(2, 1)
+
+[node name="Parede55" parent="Paredes" instance=ExtResource("2_j6uqv")]
+position = Vector2(-576, -1152)
+scale = Vector2(2, 1)
+
+[node name="Parede56" parent="Paredes" instance=ExtResource("2_j6uqv")]
+position = Vector2(-1024, -1216)
+scale = Vector2(7, 1)
+
+[node name="Parede57" parent="Paredes" instance=ExtResource("2_j6uqv")]
+position = Vector2(-1152, -1152)
+scale = Vector2(2, 1)
+
+[node name="Parede58" parent="Paredes" instance=ExtResource("2_j6uqv")]
+position = Vector2(-1216, -1088)
+
+[node name="Parede59" parent="Paredes" instance=ExtResource("2_j6uqv")]
+position = Vector2(-1280, -1024)
+
+[node name="Parede60" parent="Paredes" instance=ExtResource("2_j6uqv")]
+position = Vector2(-1344, -960)
+
+[node name="Parede61" parent="Paredes" instance=ExtResource("2_j6uqv")]
+position = Vector2(-1408, -896)
+scale = Vector2(1, 10)
+
+[node name="Parede62" parent="Paredes" instance=ExtResource("2_j6uqv")]
+position = Vector2(-1344, -256)
+scale = Vector2(1, 3)
+
+[node name="Parede63" parent="Paredes" instance=ExtResource("2_j6uqv")]
+position = Vector2(-1280, -64)
+scale = Vector2(1, 10)
+
+[node name="Parede64" parent="Paredes" instance=ExtResource("2_j6uqv")]
+position = Vector2(-1344, 576)
+scale = Vector2(1, 3)
+
+[node name="Parede65" parent="Paredes" instance=ExtResource("2_j6uqv")]
+position = Vector2(-1408, 768)
+scale = Vector2(1, 5)
+
+[node name="Parede66" parent="Paredes" instance=ExtResource("2_j6uqv")]
+position = Vector2(-1472, 1088)
+
+[node name="Parede67" parent="Paredes" instance=ExtResource("2_j6uqv")]
+position = Vector2(-1536, 1152)
+
+[node name="Parede68" parent="Paredes" instance=ExtResource("2_j6uqv")]
+position = Vector2(-1600, 1216)
+
+[node name="Parede69" parent="Paredes" instance=ExtResource("2_j6uqv")]
+position = Vector2(-1664, 1280)
+scale = Vector2(0.990215, 4)
+
+[node name="Parede70" parent="Paredes" instance=ExtResource("2_j6uqv")]
+position = Vector2(-576, 320)
+scale = Vector2(3, 1)
+
+[node name="Parede71" parent="Paredes" instance=ExtResource("2_j6uqv")]
+position = Vector2(-448, 128)
+scale = Vector2(1, 3)
+
+[node name="Parede72" parent="Paredes" instance=ExtResource("2_j6uqv")]
+position = Vector2(-384, 64)
+
+[node name="Parede73" parent="Paredes" instance=ExtResource("2_j6uqv")]
+position = Vector2(-320, -320)
+scale = Vector2(1, 6)
+
+[node name="Parede74" parent="Paredes" instance=ExtResource("2_j6uqv")]
+position = Vector2(-384, -512)
+scale = Vector2(1, 3)
+
+[node name="Parede75" parent="Paredes" instance=ExtResource("2_j6uqv")]
+position = Vector2(-448, -640)
+scale = Vector2(1, 2)
+
+[node name="Parede76" parent="Paredes" instance=ExtResource("2_j6uqv")]
+position = Vector2(-512, -768)
+scale = Vector2(1, 2)
+
+[node name="Parede77" parent="Paredes" instance=ExtResource("2_j6uqv")]
+position = Vector2(-704, -832)
+scale = Vector2(3, 1)
+
+[node name="Parede78" parent="Paredes" instance=ExtResource("2_j6uqv")]
+position = Vector2(-768, -768)
+
+[node name="Parede79" parent="Paredes" instance=ExtResource("2_j6uqv")]
+position = Vector2(-832, -704)
+
+[node name="Parede80" parent="Paredes" instance=ExtResource("2_j6uqv")]
+position = Vector2(-896, -640)
+
+[node name="Parede81" parent="Paredes" instance=ExtResource("2_j6uqv")]
+position = Vector2(-960, -576)
+
+[node name="Parede82" parent="Paredes" instance=ExtResource("2_j6uqv")]
+position = Vector2(-1024, -512)
+scale = Vector2(1, 2)
+
+[node name="Parede83" parent="Paredes" instance=ExtResource("2_j6uqv")]
+position = Vector2(-960, -384)
+scale = Vector2(1, 3)
+
+[node name="Parede84" parent="Paredes" instance=ExtResource("2_j6uqv")]
+position = Vector2(-896, -192)
+scale = Vector2(1, 4)
+
+[node name="Parede85" parent="Paredes" instance=ExtResource("2_j6uqv")]
+position = Vector2(-832, 64)
+
+[node name="Parede86" parent="Paredes" instance=ExtResource("2_j6uqv")]
+position = Vector2(-768, 128)
+
+[node name="Parede87" parent="Paredes" instance=ExtResource("2_j6uqv")]
+position = Vector2(-704, 192)
+
+[node name="Parede88" parent="Paredes" instance=ExtResource("2_j6uqv")]
+position = Vector2(-640, 256)
+
+[node name="Parede89" parent="Paredes" instance=ExtResource("2_j6uqv")]
+position = Vector2(128, -64)
+scale = Vector2(7, 1)
+
+[node name="Parede90" parent="Paredes" instance=ExtResource("2_j6uqv")]
+position = Vector2(256, -128)
+scale = Vector2(3, 1)
+
+[node name="Parede91" parent="Paredes" instance=ExtResource("2_j6uqv")]
+position = Vector2(448, -192)
+
+[node name="Parede92" parent="Paredes" instance=ExtResource("2_j6uqv")]
+position = Vector2(512, -256)
+
+[node name="Parede93" parent="Paredes" instance=ExtResource("2_j6uqv")]
+position = Vector2(576, -320)
+scale = Vector2(2, 1)
+
+[node name="Parede94" parent="Paredes" instance=ExtResource("2_j6uqv")]
+position = Vector2(704, -384)
+
+[node name="Parede95" parent="Paredes" instance=ExtResource("2_j6uqv")]
+position = Vector2(768, -384)
+scale = Vector2(1, 2)
+
+[node name="Parede96" parent="Paredes" instance=ExtResource("2_j6uqv")]
+position = Vector2(704, -256)
+
+[node name="Parede97" parent="Paredes" instance=ExtResource("2_j6uqv")]
+position = Vector2(640, -192)
+
+[node name="Parede98" parent="Paredes" instance=ExtResource("2_j6uqv")]
+position = Vector2(576, -128)
+scale = Vector2(2, 1)
+
+[node name="Parede99" parent="Paredes" instance=ExtResource("2_j6uqv")]
+position = Vector2(576, 192)
+scale = Vector2(3, 1)
+
+[node name="Parede100" parent="Paredes" instance=ExtResource("2_j6uqv")]
+position = Vector2(768, 256)
+
+[node name="Parede101" parent="Paredes" instance=ExtResource("2_j6uqv")]
+position = Vector2(832, 320)
+scale = Vector2(1, 2)
+
+[node name="Parede102" parent="Paredes" instance=ExtResource("2_j6uqv")]
+position = Vector2(896, 448)
+scale = Vector2(1, 2)
+
+[node name="Parede103" parent="Paredes" instance=ExtResource("2_j6uqv")]
+position = Vector2(960, 576)
+scale = Vector2(1, 2)
+
+[node name="Parede104" parent="Paredes" instance=ExtResource("2_j6uqv")]
+position = Vector2(1024, 704)
+scale = Vector2(1, 3)
+
+[node name="Parede105" parent="Paredes" instance=ExtResource("2_j6uqv")]
+position = Vector2(1088, 896)
+
+[node name="Parede106" parent="Paredes" instance=ExtResource("2_j6uqv")]
+position = Vector2(960, 960)
+scale = Vector2(2, 1)
+
+[node name="Parede107" parent="Paredes" instance=ExtResource("2_j6uqv")]
+position = Vector2(768, 1024)
+scale = Vector2(3, 1)
+
+[node name="Parede108" parent="Paredes" instance=ExtResource("2_j6uqv")]
+position = Vector2(576, 960)
+scale = Vector2(3, 1)
+
+[node name="Parede109" parent="Paredes" instance=ExtResource("2_j6uqv")]
+position = Vector2(448, 896)
+scale = Vector2(2, 1)
+
+[node name="Parede110" parent="Paredes" instance=ExtResource("2_j6uqv")]
+position = Vector2(384, 704)
+scale = Vector2(1, 3)
+
+[node name="Parede111" parent="Paredes" instance=ExtResource("2_j6uqv")]
+position = Vector2(320, 640)
+
+[node name="Parede112" parent="Paredes" instance=ExtResource("2_j6uqv")]
+position = Vector2(256, 576)
+
+[node name="Parede113" parent="Paredes" instance=ExtResource("2_j6uqv")]
+position = Vector2(192, 512)
+
+[node name="Parede114" parent="Paredes" instance=ExtResource("2_j6uqv")]
+position = Vector2(128, 448)
+
+[node name="Parede115" parent="Paredes" instance=ExtResource("2_j6uqv")]
+position = Vector2(128, 384)
+scale = Vector2(3, 1)
+
+[node name="Parede116" parent="Paredes" instance=ExtResource("2_j6uqv")]
+position = Vector2(320, 320)
+scale = Vector2(2, 1)
+
+[node name="Parede117" parent="Paredes" instance=ExtResource("2_j6uqv")]
+position = Vector2(448, 256)
+scale = Vector2(2, 1)
+
+[node name="RascunhoMapa" type="TextureRect" parent="."]
+texture_filter = 1
+offset_left = -2048.0
+offset_top = -2048.0
+offset_right = -1408.0
+offset_bottom = -1408.0
+scale = Vector2(6.4, 6.4)
+texture = ExtResource("1_xv3s7")
 
 [node name="Cenario" type="TileMap" parent="."]
 tile_set = ExtResource("1_eu8q0")
 format = 2
-layer_0/tile_data = PackedInt32Array(262139, 65537, 1, 262140, 65537, 1, 262141, 65537, 1, 262142, 65537, 1, 262143, 65537, 1, 196608, 65537, 1, 196609, 65537, 1, 196610, 65537, 1, 196611, 65537, 1, 196612, 65537, 1, 131076, 65537, 1, 65540, 65537, 1, 4, 65537, 1, -65532, 65537, 1, -131068, 65537, 1, -196604, 65537, 1, -196605, 65537, 1, -131077, 65537, 1, -65541, 65537, 1, -5, 65537, 1, 65531, 65537, 1, 131067, 65537, 1, 196603, 65537, 1, 196604, 1, 0, 196605, 1, 0, 196606, 1, 0, 196607, 1, 0, 131072, 1, 0, 131073, 1, 0, 131074, 1, 0, 131075, 1, 0, 65538, 262145, 0, 65539, 1, 0, 65537, 65537, 0, 65536, 65537, 0, 131071, 65537, 0, 131070, 327681, 0, 131069, 1, 0, 65533, 65537, 0, 65532, 1, 0, -4, 1, 0, -65540, 1, 0, -131076, 65537, 1, -131075, 65537, 1, 131068, 1, 0, -2, 65537, 0, -65538, 1, 0, -131074, 65537, 1, -65539, 1, 0, -3, 327681, 1, -131073, 65537, 0, -196608, 65537, 0, -196607, 65537, 1, -131071, 262145, 1, -65535, 65537, 0, 1, 65537, 0, 0, 65537, 0, 65534, 65537, 0, -131072, 65537, 0, -65536, 65537, 0, -196606, 65537, 1, -131070, 1, 0, -131069, 1, 0, -65533, 1, 0, 3, 1, 0, -65534, 262145, 1, 2, 65537, 0, -65537, 65537, 0, -1, 65537, 0, 65535, 65537, 0, -196610, 65537, 1, -196611, 65537, 1, -196612, 65537, 1, -196613, 65537, 1, -262143, 65537, 1, -262142, 65537, 1, -262141, 65537, 1, -262140, 65537, 1, -262144, 65537, 0, -196609, 65537, 0)
-
-[node name="Player" parent="." instance=ExtResource("2_ggbk2")]
-position = Vector2(0, 16)
-
-[node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(0, 16)
+layer_0/tile_data = PackedInt32Array(262139, 65537, 1, 262140, 65537, 1, 262141, 65537, 1, 262142, 65537, 1, 262143, 65537, 1, 196608, 65537, 1, 196609, 65537, 1, 196610, 65537, 1, 196611, 65537, 1, 196612, 65537, 1, -196604, 65537, 1, -131077, 65537, 1, -65541, 65537, 1, -196611, 65537, 1, -196612, 65537, 1, -196613, 65537, 1, -262142, 65537, 1, -262141, 65537, 1, -262140, 65537, 1, 1376236, 196609, 1, 1310701, 196609, 1, 1245165, 196609, 1, 1179629, 196609, 1, 1114094, 196609, 1, 1048558, 196609, 1, 983022, 196609, 1, 917486, 196609, 1, 917487, 196609, 1, 983023, 196609, 1, 1048559, 196609, 1, 917488, 196609, 1, 851952, 196609, 1, 851951, 196609, 1, 851953, 196609, 1, 786417, 196609, 1, 786416, 196609, 1, 786418, 196609, 1, 786419, 196609, 1, 786420, 196609, 1, 786421, 196609, 1, 720885, 196609, 1, 720886, 196609, 1, 786422, 196609, 1, 786423, 196609, 1, 786424, 196609, 1, 786425, 196609, 1, 786426, 196609, 1, 720890, 196609, 1, 720889, 196609, 1, 720888, 196609, 1, 720887, 196609, 1, 720884, 196609, 1, 720883, 196609, 1, 720882, 196609, 1, 720881, 196609, 1, 655345, 196609, 1, 655346, 196609, 1, 655347, 196609, 1, 655348, 196609, 1, 589811, 196609, 1, 524275, 196609, 1, 524274, 196609, 1, 589810, 196609, 1, 524273, 196609, 1, 458737, 196609, 1, 393201, 196609, 1, 393202, 196609, 1, 458738, 196609, 1, 393200, 196609, 1, 327664, 196609, 1, 327665, 196609, 1, 327663, 196609, 1, 262127, 196609, 1, 196591, 196609, 1, 131055, 196609, 1, 131056, 196609, 1, 196592, 196609, 1, 262128, 196609, 1, 655354, 196609, 1, 655355, 196609, 1, 720891, 196609, 1, 720892, 196609, 1, 720893, 196609, 1, 720894, 196609, 1, 655358, 196609, 1, 589822, 196609, 1, 589821, 196609, 1, 589820, 196609, 1, 655356, 196609, 1, 655357, 196609, 1, 589819, 196609, 1, 786430, 196609, 1, 786431, 196609, 1, 720895, 196609, 1, 524285, 196609, 1, 458749, 196609, 1, 458750, 196609, 1, 524286, 196609, 1, 1441773, 262145, 2, 1376238, 262145, 2, 1179631, 262145, 2, 1441772, 196609, 2, 1441771, 131073, 2, 1376235, 131073, 1, 1310699, 131073, 0, 1310700, 327681, 0, 1376237, 393217, 1, 1310702, 262145, 1, 1245166, 262145, 1, 1179630, 393217, 1, 1114095, 393217, 1, 983024, 393217, 1, 917489, 393217, 1, 851954, 393217, 1, 851950, 327681, 0, 786415, 327681, 0, 720880, 327681, 0, 1114092, 131073, 0, 1245164, 131073, 1, 1179628, 131073, 1, 1114093, 327681, 0, 1048557, 131073, 1, 983021, 131073, 1, 917485, 131073, 1, 851949, 131073, 0, 1114096, 262145, 2, 1048560, 262145, 1, 983025, 262145, 2, 917490, 262145, 2, 851955, 196609, 2, 851956, 196609, 2, 851957, 196609, 2, 851958, 196609, 2, 851959, 196609, 2, 851960, 196609, 2, 851961, 196609, 2, 1638380, 1, 1, 1572844, 1, 1, 1507308, 1, 1, 1507309, 1, 1, 1507310, 1, 1, 1572846, 1, 1, 1572845, 1, 1, 1441774, 1, 1, 1441775, 1, 1, 1507311, 1, 1, 1376239, 1, 1, 1310703, 1, 1, 1245167, 1, 1, 1245168, 1, 1, 1179632, 1, 1, 1310704, 1, 1, 1376240, 1, 1, 1441776, 1, 1, 1507307, 1, 1, 1572843, 1, 1, 1638379, 1, 1, 1638378, 1, 1, 1572842, 1, 1, 1572841, 262145, 2, 1572840, 196609, 2, 1572839, 131073, 2, 1507303, 131073, 1, 1441767, 131073, 0, 1376231, 1, 1, 1376232, 1, 1, 1507305, 262145, 1, 1376233, 1, 1, 1441770, 1, 1, 1507306, 1, 1, 1376234, 1, 1, 1310698, 1, 1, 1310697, 1, 1, 1310696, 1, 1, 1245161, 1, 1, 1245162, 1, 1, 1245163, 1, 1, 1179627, 1, 1, 1179626, 1, 1, 1114091, 1, 1, 1048555, 1, 1, 983019, 1, 1, 917483, 1, 1, 917484, 1, 1, 983020, 1, 1, 1048556, 1, 1, 1114097, 1, 1, 1048561, 1, 1, 1048562, 1, 1, 1114098, 1, 1, 1179633, 1, 1, 1048563, 1, 1, 983027, 1, 1, 917491, 1, 1, 1114099, 1, 1, 983026, 1, 1, 851947, 1, 1, 851948, 1, 1, 786412, 1, 1, 720876, 1, 1, 720877, 1, 1, 786413, 1, 1, 720878, 1, 1, 720879, 1, 1, 786414, 1, 1, 1507304, 196609, 1, 1441768, 196609, 0, 1441769, 262145, 0)
 
 [node name="MeninoNPC" parent="." instance=ExtResource("4_jeu6k")]
-position = Vector2(0, 128)
+position = Vector2(640, -1152)
 
-[node name="TesteProp" parent="." instance=ExtResource("5_vjccf")]
-position = Vector2(-192, -64)
+[node name="Player" parent="." instance=ExtResource("2_ggbk2")]
+position = Vector2(-1536, 1408)
 
-[node name="TesteProp2" parent="." instance=ExtResource("5_vjccf")]
-position = Vector2(-192, 128)
-
-[node name="TesteProp3" parent="." instance=ExtResource("5_vjccf")]
-position = Vector2(192, -64)
-
-[node name="TesteProp4" parent="." instance=ExtResource("5_vjccf")]
-position = Vector2(192, 128)
+[node name="Camera2D" type="Camera2D" parent="Player"]
+limit_left = -1792
+limit_top = -1792
+limit_right = 1792
+limit_bottom = 1792
+limit_smoothed = true
+position_smoothing_speed = 1.0
+drag_horizontal_enabled = true
+drag_vertical_enabled = true
+drag_left_margin = 0.1
+drag_top_margin = 0.1
+drag_right_margin = 0.1
+drag_bottom_margin = 0.1

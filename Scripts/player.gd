@@ -1,6 +1,6 @@
 extends CharacterBody2D
 
-var spd = 160
+var spd = 120
 var direction = Vector2.ZERO # direção do andar
 var dir_olhar = Vector2.DOWN # direção do olhar do personagem
 
@@ -39,7 +39,7 @@ func _movimento():
 		else:
 			tecla2 = direction-tecla1
 			dir_olhar = tecla2
-	$Area2D.position = dir_olhar * 32 # area de interagir do player
+	$Area2D.position = Vector2(32, 32) + dir_olhar * 32 # area de interagir do player
 	
 	move_and_slide()
 
@@ -47,13 +47,13 @@ func _movimento():
 func _animation_player():
 	match dir_olhar:
 		Vector2.DOWN:
-			$Personagem.frame = 0
+			$Sprite.frame = 0
 		Vector2.UP:
-			$Personagem.frame = 2
+			$Sprite.frame = 2
 		Vector2.LEFT:
-			$Personagem.frame = 4
+			$Sprite.frame = 4
 		Vector2.RIGHT:
-			$Personagem.frame = 6
+			$Sprite.frame = 6
 
 
 func _modo_cutscene(modo:bool):

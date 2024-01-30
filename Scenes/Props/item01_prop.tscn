@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://d0bvatb7k5edv"]
+
+[ext_resource type="Script" path="res://Scripts/PropsInfo/info_item01_prop.gd" id="1_vumvn"]
+[ext_resource type="PackedScene" uid="uid://dgw0aloik2xf" path="res://Scenes/Props/PropBase/prop_base.tscn" id="2_xwddj"]
+
+[node name="TesteProp" type="Node2D"]
+script = ExtResource("1_vumvn")
+
+[node name="PropBase" parent="." instance=ExtResource("2_xwddj")]
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_right = 64.0
+offset_bottom = 64.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+color = Color(1, 0.454902, 1, 0.309804)

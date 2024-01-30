@@ -15,7 +15,6 @@ func historia():
 
 
 func _process(delta):
-	print(num_historia)
 	match num_historia:
 		1:
 			if inventario == 4:
