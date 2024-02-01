@@ -6,7 +6,7 @@ var coletavel = false # boolean
 func _ready():
 	Global.avancar_historia.connect(_escolhendo_falas)
 	randomize()
-	$ColorRect.color = Color.GREEN
+	$ColorRect.hide()
 	_escolhendo_falas() 
 
 

@@ -29,6 +29,7 @@ func config_caixa_dialogo(lado:int):
 	match lado:
 		0: # Esquerda
 			$SpriteCaixa.texture = load("res://Assets/GUI/caixa_dialogoE.png")
+			$SpriteCaixa/Falas.size = Vector2(428, 80)
 			$SpriteCaixa/RostoNPC.position = Vector2(16, 16)
 			$SpriteCaixa/Falas.position = Vector2(134, 32)
 			$SpriteCaixa/Nome.position = Vector2(128, 14)
@@ -36,6 +37,7 @@ func config_caixa_dialogo(lado:int):
 		
 		1: # Direita
 			$SpriteCaixa.texture = load("res://Assets/GUI/caixa_dialogoD.png")
+			$SpriteCaixa/Falas.size = Vector2(428, 80)
 			$SpriteCaixa/RostoNPC.position = Vector2(464, 16)
 			$SpriteCaixa/Falas.position = Vector2(22, 32)
 			$SpriteCaixa/Nome.position = Vector2(368, 14)
@@ -43,6 +45,7 @@ func config_caixa_dialogo(lado:int):
 			
 		2: # Limpo
 			$SpriteCaixa.texture = load("res://Assets/GUI/caixa_dialogoLimpo.png")
+			$SpriteCaixa/Falas.size = Vector2(500, 80)
 			$SpriteCaixa/RostoNPC.position = Vector2(-128, 0)
 			$SpriteCaixa/Falas.position = Vector2(38, 24)
 			$SpriteCaixa/Nome.position = Vector2(-128, 0)

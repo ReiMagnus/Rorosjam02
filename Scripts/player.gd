@@ -1,8 +1,9 @@
 extends CharacterBody2D
 
-var spd = 120
+var spd = 120*6
 var direction = Vector2.ZERO # direção do andar
 var dir_olhar = Vector2.DOWN # direção do olhar do personagem
+@onready var animation_player = $Sprite/AnimationPlayer
 
 var _estou_na_cutscene = false # quando true, o player ficará parado, como para cenas de dialogo ou cutscenes
 
@@ -47,14 +48,20 @@ func _movimento():
 func _animation_player():
 	match dir_olhar:
 		Vector2.DOWN:
-			$Sprite.frame = 0
+			animation_player.play("andar_down")
 		Vector2.UP:
-			$Sprite.frame = 2
+			animation_player.play("andar_up")
 		Vector2.LEFT:
-			$Sprite.frame = 4
+			animation_player.play("andar_left")
 		Vector2.RIGHT:
-			$Sprite.frame = 6
+			animation_player.play("andar_right")
+	if direction != Vector2.ZERO:
+			animation_player.play()
+	else:
+		animation_player.stop()
 
 
 func _modo_cutscene(modo:bool):
 	_estou_na_cutscene = modo
+	if modo:
+		animation_player.stop()

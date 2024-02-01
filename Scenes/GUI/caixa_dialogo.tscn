@@ -31,7 +31,6 @@ grow_horizontal = 2
 grow_vertical = 0
 
 [node name="RostoNPC" type="TextureRect" parent="SpriteCaixa"]
-layout_mode = 0
 offset_left = 464.0
 offset_top = 16.0
 offset_right = 560.0
@@ -51,10 +50,9 @@ offset_bottom = 48.0
 grow_horizontal = 2
 grow_vertical = 2
 label_settings = SubResource("LabelSettings_m0wf1")
-autowrap_mode = 1
+autowrap_mode = 3
 
 [node name="Nome" type="Label" parent="SpriteCaixa"]
-layout_mode = 0
 offset_left = 368.0
 offset_top = 14.0
 offset_right = 448.0

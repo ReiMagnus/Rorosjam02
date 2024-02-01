@@ -1,9 +1,10 @@
-[gd_scene load_steps=3 format=3 uid="uid://d0bvatb7k5edv"]
+[gd_scene load_steps=4 format=3 uid="uid://d0bvatb7k5edv"]
 
 [ext_resource type="Script" path="res://Scripts/PropsInfo/info_item01_prop.gd" id="1_vumvn"]
 [ext_resource type="PackedScene" uid="uid://dgw0aloik2xf" path="res://Scenes/Props/PropBase/prop_base.tscn" id="2_xwddj"]
+[ext_resource type="Texture2D" uid="uid://tfof04rg58nk" path="res://Assets/ItensMenino.png" id="3_rurob"]
 
-[node name="TesteProp" type="Node2D"]
+[node name="Polvinho" type="Node2D"]
 script = ExtResource("1_vumvn")
 
 [node name="PropBase" parent="." instance=ExtResource("2_xwddj")]
@@ -14,3 +15,9 @@ offset_bottom = 64.0
 size_flags_horizontal = 4
 size_flags_vertical = 4
 color = Color(1, 0.454902, 1, 0.309804)
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(32, 32)
+texture = ExtResource("3_rurob")
+hframes = 4

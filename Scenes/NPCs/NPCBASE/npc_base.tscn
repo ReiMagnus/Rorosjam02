@@ -4,10 +4,10 @@
 [ext_resource type="PackedScene" uid="uid://dx66r72wkfdli" path="res://Scenes/GUI/caixa_dialogo.tscn" id="2_g2mey"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ub5bx"]
-size = Vector2(64, 32)
+size = Vector2(32, 32)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_kw6ty"]
-size = Vector2(40, 40)
+size = Vector2(24, 24)
 
 [node name="npc_base" type="StaticBody2D"]
 collision_layer = 2
@@ -23,7 +23,7 @@ collision_layer = 0
 collision_mask = 8
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="AreaInteragir"]
-position = Vector2(32, 32)
+position = Vector2(32, 48)
 shape = SubResource("RectangleShape2D_kw6ty")
 debug_color = Color(0, 0.529412, 0.996078, 0.419608)
 

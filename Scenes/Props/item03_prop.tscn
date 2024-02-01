@@ -1,9 +1,10 @@
-[gd_scene load_steps=3 format=3 uid="uid://be8t4kg1yejhk"]
+[gd_scene load_steps=4 format=3 uid="uid://be8t4kg1yejhk"]
 
 [ext_resource type="Script" path="res://Scripts/PropsInfo/info_item03_prop.gd" id="1_mxiq1"]
 [ext_resource type="PackedScene" uid="uid://dgw0aloik2xf" path="res://Scenes/Props/PropBase/prop_base.tscn" id="2_p0h2j"]
+[ext_resource type="Texture2D" uid="uid://tfof04rg58nk" path="res://Assets/ItensMenino.png" id="3_4x1t8"]
 
-[node name="TesteProp" type="Node2D"]
+[node name="BonecaMaid" type="Node2D"]
 script = ExtResource("1_mxiq1")
 
 [node name="PropBase" parent="." instance=ExtResource("2_p0h2j")]
@@ -14,3 +15,10 @@ offset_bottom = 64.0
 size_flags_horizontal = 4
 size_flags_vertical = 4
 color = Color(1, 0.454902, 1, 0.309804)
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(32, 32)
+texture = ExtResource("3_4x1t8")
+hframes = 4
+frame = 2

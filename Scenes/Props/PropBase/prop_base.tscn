@@ -29,6 +29,7 @@ shape = SubResource("RectangleShape2D_pmm85")
 debug_color = Color(0, 0.529412, 0.996078, 0.419608)
 
 [node name="ColorRect" type="ColorRect" parent="AreaInteragir/CollisionShape2D"]
+visible = false
 offset_left = -16.0
 offset_top = -16.0
 offset_right = 16.0
