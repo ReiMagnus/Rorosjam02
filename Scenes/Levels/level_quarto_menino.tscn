@@ -1,29 +1,28 @@
-[gd_scene load_steps=2 format=3 uid="uid://da0fmt6jpn8se"]
+[gd_scene load_steps=5 format=3 uid="uid://da0fmt6jpn8se"]
 
-[ext_resource type="PackedScene" uid="uid://b2s1pjnpw4yr" path="res://Scenes/parede.tscn" id="1_k7s47"]
+[ext_resource type="Script" path="res://Scripts/level_quarto_menino.gd" id="1_ovgpq"]
+[ext_resource type="Texture2D" uid="uid://djs2q7eegg65p" path="res://Assets/Mapas/QuartoMeninoProtanopia.png" id="2_n7bi0"]
+[ext_resource type="PackedScene" uid="uid://djcrc88x0y781" path="res://Scenes/NPCs/menino_npc.tscn" id="2_oyjp4"]
+[ext_resource type="AudioStream" uid="uid://gyr3sdxxcly" path="res://Assets/despertador.wav" id="4_ffcan"]
 
 [node name="LevelQuartoMenino" type="Node"]
+script = ExtResource("1_ovgpq")
 
-[node name="ColorRect" type="ColorRect" parent="."]
+[node name="TextureRect" type="TextureRect" parent="."]
+texture_filter = 1
 offset_right = 40.0
 offset_bottom = 40.0
-scale = Vector2(16, 12)
-color = Color(0.376471, 0.376471, 0.376471, 1)
+texture = ExtResource("2_n7bi0")
 
-[node name="Paredes" type="Node" parent="."]
+[node name="MeninoNPC" parent="." instance=ExtResource("2_oyjp4")]
+position = Vector2(-154, 300)
 
-[node name="Parede" parent="Paredes" instance=ExtResource("1_k7s47")]
-position = Vector2(-64, -64)
-scale = Vector2(11, 1)
+[node name="Timer" type="Timer" parent="."]
+wait_time = 5.0
+one_shot = true
+autostart = true
 
-[node name="Parede2" parent="Paredes" instance=ExtResource("1_k7s47")]
-position = Vector2(640, -64)
-scale = Vector2(1, 10.0258)
+[node name="SomDespertador" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("4_ffcan")
 
-[node name="Parede3" parent="Paredes" instance=ExtResource("1_k7s47")]
-position = Vector2(-64, 480)
-scale = Vector2(11, 1)
-
-[node name="Parede4" parent="Paredes" instance=ExtResource("1_k7s47")]
-position = Vector2(-64, 0)
-scale = Vector2(1, 9)
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

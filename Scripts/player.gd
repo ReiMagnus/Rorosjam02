@@ -1,6 +1,6 @@
 extends CharacterBody2D
 
-var spd = 120*6
+var spd = 120
 var direction = Vector2.ZERO # direção do andar
 var dir_olhar = Vector2.DOWN # direção do olhar do personagem
 @onready var animation_player = $Sprite/AnimationPlayer
@@ -40,7 +40,7 @@ func _movimento():
 		else:
 			tecla2 = direction-tecla1
 			dir_olhar = tecla2
-	$Area2D.position = Vector2(32, 32) + dir_olhar * 32 # area de interagir do player
+	$Area2D.position = Vector2(32, 32) + dir_olhar * 24 # area de interagir do player
 	
 	move_and_slide()
 
@@ -55,9 +55,7 @@ func _animation_player():
 			animation_player.play("andar_left")
 		Vector2.RIGHT:
 			animation_player.play("andar_right")
-	if direction != Vector2.ZERO:
-			animation_player.play()
-	else:
+	if direction == Vector2.ZERO:
 		animation_player.stop()
 
 

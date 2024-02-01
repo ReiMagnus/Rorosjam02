@@ -21,4 +21,4 @@ func _escolhendo_falas():
 		_:
 			falas = ["SEM FALAS"]
 	if coletavel:
-		falas.insert(falas.size(), "*Você pegou a pelúcia")
+		falas.insert(falas.size(), "*Você pegou a pelúcia.")

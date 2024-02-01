@@ -14,11 +14,11 @@ func _escolhendo_falas():
 	coletavel = false
 	match Global.num_historia:
 		0:
-			falas = ["item genéricoo"]
+			falas = ["É uma boneca de pano com uma roupa de maid, quem deixou ela aqui?"]
 		1:
 			coletavel = true
-			falas = ["item genérico"]
+			falas = ["Deve ser a boneca que o aquele menino falou, vou levar de volta para ele."]
 		_:
 			falas = ["SEM FALAS"]
 	if coletavel:
-		falas.insert(falas.size(), "*Você pegou esse item")
+		falas.insert(falas.size(), "*Você pegou a boneca.")

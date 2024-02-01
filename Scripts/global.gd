@@ -21,3 +21,6 @@ func _process(delta):
 				historia()
 		3:
 			get_tree().change_scene_to_file("res://Scenes/Levels/level_quarto_menino.tscn")
+			Global.historia()
+		5:
+			get_tree().quit()

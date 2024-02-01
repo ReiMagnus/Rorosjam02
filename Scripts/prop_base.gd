@@ -24,7 +24,6 @@ func _conversando():
 	if modo_cutscene:
 		$CanvasLayer/CaixaDialogo.show()
 		$CanvasLayer/CaixaDialogo.fala_atual = info_prop.falas[num_fala]
-		print($CanvasLayer/CaixaDialogo/SpriteCaixa/Falas  .size)
 	else:
 		$CanvasLayer/CaixaDialogo.hide()
 

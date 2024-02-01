@@ -1,6 +1,7 @@
-[gd_scene load_steps=5 format=3 uid="uid://ocka7b4avknb"]
+[gd_scene load_steps=6 format=3 uid="uid://ocka7b4avknb"]
 
 [ext_resource type="Script" path="res://Scripts/menu.gd" id="1_2eqko"]
+[ext_resource type="Texture2D" uid="uid://c3ssq8xkhsm3u" path="res://Assets/Fundo.png" id="2_6lh8p"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_oqv46"]
 font_size = 38
@@ -22,16 +23,16 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_2eqko")
 
-[node name="ColorRect" type="ColorRect" parent="."]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-color = Color(0.054902, 0.27451, 0.494118, 1)
+[node name="TextureRect" type="TextureRect" parent="."]
+texture_filter = 1
+layout_mode = 0
+offset_right = 640.0
+offset_bottom = 512.0
+texture = ExtResource("2_6lh8p")
+stretch_mode = 1
 
 [node name="Label" type="Label" parent="."]
+texture_filter = 1
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -44,7 +45,7 @@ offset_right = 56.5
 offset_bottom = -67.645
 grow_horizontal = 2
 grow_vertical = 2
-text = "Jogo Rorosjam"
+text = "O que os olhos não veem"
 label_settings = SubResource("LabelSettings_oqv46")
 horizontal_alignment = 1
 vertical_alignment = 1
